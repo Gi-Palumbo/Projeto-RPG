@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#hamburguer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 11;
+}
+
+#hamburguer .linha{
+    width: 100%;
+    height: .5rem;
+    background-color: #FFF;
+    box-shadow: 0 .2rem .2rem #000;
+} 
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    right: 10rem;
+    gap: 2rem;
+    position: fixed;
+    right: -20rem;
+    background-color: #ad8f5785;
+    height: 100vh;
+    width: 27rem;
+    z-index: 10;
+    transition: right 1s;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: var(--text-secundary);
+}
+
+#menu a:hover{
+    color: #934c30;
+}
+
+.menu-show{
+    right: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+.title{
+    float: right;
+    margin-right: 20rem;
+    margin-top: -51.3rem;
+
+}
+
+.title1{
+    float: left;
+    margin-top: 5rem;
+    margin-left: 8rem;
+
+}
+
+.button{
+    margin-top: -3rem ;
+    margin-left: -35.6rem;
+    float: left;
+    background: linear-gradient(90deg, #6B2B06, #ffff);
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: #524303;
+    transform: scale(1.1);
+    box-shadow: 3px 3px;
+}
+
+.button1{
+    margin-left: 3rem;
+    background: linear-gradient(90deg, #6B2B06, #ffff);
+    padding: 1rem 3rem;
+    border-radius: 7px;
+    float: left;
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.button1:hover{
+    transform: scale(1.1);
+    color: #524303;
+    box-shadow: 3px 3px;
+
+}
+
+.quest1{
+    float: left;
+    margin-left: 3rem;
+    margin-top: -5rem;
+}
+
+.subquest1{
+    float: left;
+    margin-left: -20rem;
+    margin-top: 0rem;
+}
+
+.subtitle1{
+    float: left;
+    margin-left: -30rem;
+    margin-top: 2rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 25rem 9.2rem;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+}
+
+header::before{
+    content: '';
+    width: 100%;
+    height:100%;
+    background-image: url("../images/Dragao\ \(1\).gif");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2; 
+}
+
+
+h1 {
+    position: relative;
+    text-shadow: 1px 3px 7px #000;
+    top: -22rem;
+    left: -5rem;
+    font-size: 5rem;
+    font-weight: 500;
+    color:#2C0E37;
+    font-family:'Great Vibes' ;  
+}
+span{
+    position: relative;
+    left: 40rem;
+    top: -34rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #383239;
+    font-family: 'Poppins';
+}
+a{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    top: -5rem;
+    left: 11.5rem;
+    font-family:'Fira Sans';
+    color: black;
+}
+h2{
+    position: relative;
+    text-shadow: 1px 3px 7px #000;
+    top: -20rem;
+    left: 15rem;
+    font-size: 4.5rem;
+    color: #650D1B;
+    font-weight: 550;
+    font-family: 'Great Vibes';
+}
+h3{
+   position: relative; 
+   top: -19rem;
+   left: 14rem;
+   font-style: italic;
+   font-weight: 200;
+   font-size: 1.5rem;
+   font-family: 'Fira Sans';
+   color: #3E1801;
+   
+}
+h4{
+    position: relative;
+    top: -18rem;
+    left: 8rem;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans';
+}
+
+h5{
+    text-shadow: 1px 3px 7px #000;
+    font-size: 4rem;
+    color: #2C0E37;
+    font-weight: 550;
+    font-family: 'Great Vibes';
+}
+p{
+    
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.7rem;
+    font-family: 'Fira Sans';
+
+}
+h6{
+    text-shadow: 1px 3px 7px #000;
+    font-size: 4rem;
+    color: #2C0E37;
+    font-weight: 550;
+    font-family: 'Great Vibes';
+}
+
+text{
+    text-shadow: 1px 3px 7px #000;
+    font-size: 2rem;
+    color: #2C0E37;
+    font-weight: 550;
+    font-family: 'Great Vibes';
+}
+
+#inicio{
+    height: 110vh;
+    background-size: cover;
+    background-image: url("../images/foto\ fofa.png");
+}
+
+.text{
+    float: left;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    padding-right: 80rem;
+}
+
+.text1{
+    float: right;
+    margin-top: -6rem;
+    margin-right: 10rem ;
+    padding-left: 80rem;
+
+}
+
+
+#section-projects{
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../images/foto\ fofa.png");
+}
+
+
+
+.button3{
+    background: linear-gradient(90deg, #e7855e, #c75353);
+    padding: 2rem 2rem;
+    border-radius: 7px;
+    color: #f7c250;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.button3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #dd7f48 ;
+}
+
+
+
+
+.card-image img{
+    margin-left: -70rem;
+
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: line; 
+    position: absolute;
+    margin-left: -61.25rem;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .5s, bottom .5s;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+
+
+
+.tipos{
+    float: left;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    padding-right: 80rem;
+}
+
+.texto-tipos{
+    float: left;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    padding-right: 80rem;
+  
+}
+
+.tipos1{
+    float: right;
+    margin-top: -10rem;
+    margin-left: 10rem;
+    padding-right: 40rem;
+}
+
+
+#section-projects{
+    padding: 4rem;
+    background-color: #212121;
+}
+
+#section-projects ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+#section-projects li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#section-projects li:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
